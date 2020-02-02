@@ -49,7 +49,7 @@ func (g *General) GetPing() (*PingResponse, error) {
 
 	resp, err := client.Do(req)
 	if err != nil {
-		return nil, fmt.Errorf("error occured when attempting to build request %v", err)
+		return nil, fmt.Errorf("error occurred when attempting to build request %v", err)
 	}
 
 	defer resp.Body.Close()

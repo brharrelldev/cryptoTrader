@@ -42,7 +42,7 @@ func pingAction(c *cli.Context) error {
 
 	pingResp, err := ping.GetPing()
 	if err != nil {
-		return fmt.Errorf("error occured when checking server time %v", err)
+		return fmt.Errorf("error occurred when checking server time %v", err)
 	}
 
 	pingJson, err := pingResp.ToJson()
@@ -64,7 +64,7 @@ func serverTimeAction(c *cli.Context) error {
 
 	stResp, err := st.CheckServiceTime()
 	if err != nil {
-		return fmt.Errorf("error occured when checking server time %v", err)
+		return fmt.Errorf("error occurred when checking server time %v", err)
 	}
 
 	stJson, err := stResp.ToJson()
