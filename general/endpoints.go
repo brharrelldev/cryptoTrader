@@ -14,7 +14,6 @@ const (
 	EndpointExchangeInfo = "/api/v3/exchangeInfo"
 )
 
-
 type General struct {
 	baseURL         string
 	pingRequestFunc func() (*pingResponse, error)
@@ -95,9 +94,8 @@ func (p *pingResponse) ToJson() (string, error) {
 
 }
 
-
 // used to format to json format to relay information back to user
-func (cs *checkServerTimeResponse) ToJson() (string, error)  {
+func (cs *checkServerTimeResponse) ToJson() (string, error) {
 	return lib.ToJson(cs)
 
 }

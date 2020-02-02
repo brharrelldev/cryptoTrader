@@ -14,7 +14,6 @@ const (
 //Binance commands
 var BinanceCmd cli.Command
 
-
 func init() {
 
 	BinanceCmd.Name = "binance"

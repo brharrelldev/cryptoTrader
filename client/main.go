@@ -7,8 +7,7 @@ import (
 	"os"
 )
 
-
-func main()  {
+func main() {
 	var Version string
 	app := cli.NewApp()
 	app.Version = Version
@@ -19,7 +18,7 @@ func main()  {
 		cmd.BinanceCmd,
 	}
 
-	if err := app.Run(os.Args); err != nil{
+	if err := app.Run(os.Args); err != nil {
 		log.Fatal(err)
 	}
 }
