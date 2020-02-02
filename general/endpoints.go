@@ -14,20 +14,20 @@ const (
 	EndpointExchangeInfo = "/api/v3/exchangeInfo"
 )
 
-type GenResp func() (*PingResponse, error)
 
 type General struct {
 	baseURL         string
-	pingRequestFunc func() (*PingResponse, error)
+	pingRequestFunc func() (*pingResponse, error)
 }
 
 type checkServerTimeResponse struct {
 	ServerTime int64 `json:"serverTime"`
 }
 
-type PingResponse struct {
+type pingResponse struct {
 }
 
+//General API object
 func NewGeneralAPI(c *config.Config) (*General, error) {
 
 	return &General{
@@ -36,9 +36,10 @@ func NewGeneralAPI(c *config.Config) (*General, error) {
 
 }
 
-func (g *General) GetPing() (*PingResponse, error) {
+// will be used elsewhere in application
+func (g *General) GetPing() (*pingResponse, error) {
 
-	var pingResp *PingResponse
+	var pingResp *pingResponse
 
 	req, err := http.NewRequest(http.MethodGet, lib.URLJoin(g.baseURL, EndpointPing), nil)
 	if err != nil {
@@ -61,6 +62,7 @@ func (g *General) GetPing() (*PingResponse, error) {
 	return pingResp, nil
 }
 
+// will be used elsewhere in application
 func (g *General) CheckServiceTime() (*checkServerTimeResponse, error) {
 	var checkServerResponse *checkServerTimeResponse
 
@@ -86,12 +88,15 @@ func (g *General) CheckServiceTime() (*checkServerTimeResponse, error) {
 
 }
 
-func (p *PingResponse) ToJson() (string, error) {
+// used for formatting to json format for display
+func (p *pingResponse) ToJson() (string, error) {
 
 	return lib.ToJson(p)
 
 }
 
+
+// used to format to json format to relay information back to user
 func (cs *checkServerTimeResponse) ToJson() (string, error)  {
 	return lib.ToJson(cs)
 

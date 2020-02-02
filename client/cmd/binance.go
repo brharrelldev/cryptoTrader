@@ -13,13 +13,9 @@ const (
 
 //Binance commands
 var BinanceCmd cli.Command
-//Config command
-var conf *config.Config
+
 
 func init() {
-	conf = &config.Config{
-		BaseURL: baseURL,
-	}
 
 	BinanceCmd.Name = "binance"
 	BinanceCmd.Usage = "binance <action>"
@@ -37,6 +33,9 @@ func init() {
 }
 
 func pingAction(c *cli.Context) error {
+	conf := &config.Config{
+		BaseURL: baseURL,
+	}
 	ping, err := general.NewGeneralAPI(conf)
 	if err != nil {
 		return fmt.Errorf("could not instantiate general api")
@@ -58,6 +57,9 @@ func pingAction(c *cli.Context) error {
 }
 
 func serverTimeAction(c *cli.Context) error {
+	conf := &config.Config{
+		BaseURL: baseURL,
+	}
 
 	st, err := general.NewGeneralAPI(conf)
 	if err != nil {
