@@ -13,9 +13,6 @@ jobs:
         go-version: 1.13
       id: go
 
-    - name: Check out code into the Go module directory
-      uses: actions/checkout@v2
-
-
     - name: Build
+      uses: brharrelldev/cryptoTrader@master
       run: make build-all
