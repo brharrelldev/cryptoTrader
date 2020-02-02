@@ -11,7 +11,7 @@ import (
 const (
 	endpointPing         = "/api/v3/ping"
 	endpointTime         = "/api/v3/time"
-	EndpointExchangeInfo = "/api/v3/exchangeInfo"
+	endpointExchangeInfo = "/api/v3/exchangeInfo"
 )
 
 type General struct {
@@ -37,7 +37,7 @@ func NewGeneralAPI(c *config.Config) (*General, error) {
 
 //GetPing mirrors the Binance API.  This checks for liveness of the server.  It usually returns an empty response
 func (g *General) GetPing() (*pingResponse, error) { //test comment
-	// will be used elsewhere in application
+
 
 	var pingResp *pingResponse
 
@@ -64,7 +64,6 @@ func (g *General) GetPing() (*pingResponse, error) { //test comment
 
 //CheckServiceTime will check the server's time.  Will return response in unix format.  This is set as a int64
 func (g *General) CheckServiceTime() (*checkServerTimeResponse, error) {
-	// will be used elsewhere in application
 	var checkServerResponse *checkServerTimeResponse
 
 	req, err := http.NewRequest(http.MethodGet, lib.URLJoin(g.baseURL, endpointTime), nil)
@@ -91,15 +90,12 @@ func (g *General) CheckServiceTime() (*checkServerTimeResponse, error) {
 
 //ToJson is to format a json string for pingResponse.
 func (p *pingResponse) ToJson() (string, error) {
-	// will be used elsewhere in application
-
 	return lib.ToJson(p)
 
 }
 
 //ToJson to format to json string for checkServerTimeResponse
 func (cs *checkServerTimeResponse) ToJson() (string, error) {
-	// will be used elsewhere in application
 	return lib.ToJson(cs)
 
 }
