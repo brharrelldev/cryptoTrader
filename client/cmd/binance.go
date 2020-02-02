@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	BaseURL = "https://api.binance.com"
+	baseURL = "https://api.binance.com"
 )
 
 var BinanceCmd cli.Command
@@ -16,7 +16,7 @@ var conf *config.Config
 
 func init() {
 	conf = &config.Config{
-		BaseURL: BaseURL,
+		BaseURL: baseURL,
 	}
 
 	BinanceCmd.Name = "binance"
