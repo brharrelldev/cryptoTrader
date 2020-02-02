@@ -11,7 +11,9 @@ const (
 	baseURL = "https://api.binance.com"
 )
 
-var BinanceCmd cli.Command //binance command
+//Binance commands
+var BinanceCmd cli.Command
+//Config command
 var conf *config.Config
 
 func init() {
