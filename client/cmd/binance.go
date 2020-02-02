@@ -25,16 +25,16 @@ func init() {
 		{
 			Name:    "server-time",
 			Aliases: []string{"st"},
-			Action:  ServerTimeAction,
+			Action:  serverTimeAction,
 		},
 		{
 			Name:   "ping",
-			Action: PingAction,
+			Action: pingAction,
 		},
 	}
 }
 
-func PingAction(c *cli.Context) error {
+func pingAction(c *cli.Context) error {
 	ping, err := general.NewGeneralAPI(conf)
 	if err != nil {
 		return fmt.Errorf("could not instantiate general api")
@@ -55,7 +55,7 @@ func PingAction(c *cli.Context) error {
 	return nil
 }
 
-func ServerTimeAction(c *cli.Context) error {
+func serverTimeAction(c *cli.Context) error {
 
 	st, err := general.NewGeneralAPI(conf)
 	if err != nil {
