@@ -36,7 +36,7 @@ func NewGeneralAPI(c *config.Config) (*General, error) {
 }
 
 // will be used elsewhere in application
-func (g *General) GetPing() (*pingResponse, error) {
+func (g *General) GetPing() (*pingResponse, error) { //test comment
 	// will be used elsewhere in application
 
 	var pingResp *pingResponse
