@@ -41,7 +41,7 @@
       <recent name="$PROJECT_DIR$/integration" />
     </key>
   </component>
-  <component name="RunManager" selected="Makefile.build-client">
+  <component name="RunManager" selected="Docker.workflows/Dockerfile">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="cryptoTrader" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -93,8 +93,18 @@
       </makefile>
       <method v="2" />
     </configuration>
+    <configuration name="workflows/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="../cryptoTrader/.github/workflows/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.workflows/Dockerfile" />
         <item itemvalue="Makefile.build-client" />
         <item itemvalue="Makefile.make-bin" />
         <item itemvalue="Go Build.go build github.com/brharrelldev/crytoTrader/client" />
