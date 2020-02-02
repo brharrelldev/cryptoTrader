@@ -9,8 +9,8 @@ import (
 )
 
 const (
-	EndpointPing         = "/api/v3/ping"
-	EndpointTime         = "/api/v3/time"
+	endpointPing         = "/api/v3/ping"
+	endpointTime         = "/api/v3/time"
 	EndpointExchangeInfo = "/api/v3/exchangeInfo"
 )
 
@@ -37,10 +37,11 @@ func NewGeneralAPI(c *config.Config) (*General, error) {
 
 // will be used elsewhere in application
 func (g *General) GetPing() (*pingResponse, error) {
+	// will be used elsewhere in application
 
 	var pingResp *pingResponse
 
-	req, err := http.NewRequest(http.MethodGet, lib.URLJoin(g.baseURL, EndpointPing), nil)
+	req, err := http.NewRequest(http.MethodGet, lib.URLJoin(g.baseURL, endpointPing), nil)
 	if err != nil {
 		return nil, fmt.Errorf("error building new request object")
 	}
@@ -63,9 +64,10 @@ func (g *General) GetPing() (*pingResponse, error) {
 
 // will be used elsewhere in application
 func (g *General) CheckServiceTime() (*checkServerTimeResponse, error) {
+	// will be used elsewhere in application
 	var checkServerResponse *checkServerTimeResponse
 
-	req, err := http.NewRequest(http.MethodGet, lib.URLJoin(g.baseURL, EndpointTime), nil)
+	req, err := http.NewRequest(http.MethodGet, lib.URLJoin(g.baseURL, endpointTime), nil)
 	if err != nil {
 		return nil, fmt.Errorf("error building request %v", err)
 	}
@@ -89,6 +91,7 @@ func (g *General) CheckServiceTime() (*checkServerTimeResponse, error) {
 
 // used for formatting to json format for display
 func (p *pingResponse) ToJson() (string, error) {
+	// will be used elsewhere in application
 
 	return lib.ToJson(p)
 
@@ -96,6 +99,7 @@ func (p *pingResponse) ToJson() (string, error) {
 
 // used to format to json format to relay information back to user
 func (cs *checkServerTimeResponse) ToJson() (string, error) {
+	// will be used elsewhere in application
 	return lib.ToJson(cs)
 
 }
