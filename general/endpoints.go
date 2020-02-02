@@ -14,6 +14,7 @@ const (
 	endpointExchangeInfo = "/api/v3/exchangeInfo"
 )
 
+//General is a struct for finance general API
 type General struct {
 	baseURL         string
 	pingRequestFunc func() (*pingResponse, error)
@@ -37,7 +38,6 @@ func NewGeneralAPI(c *config.Config) (*General, error) {
 
 //GetPing mirrors the Binance API.  This checks for liveness of the server.  It usually returns an empty response
 func (g *General) GetPing() (*pingResponse, error) { //test comment
-
 
 	var pingResp *pingResponse
 
