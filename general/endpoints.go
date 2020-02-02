@@ -35,7 +35,7 @@ func NewGeneralAPI(c *config.Config) (*General, error) {
 
 }
 
-//GetPing() (*pingResponse, error)
+//GetPing mirrors the Binance API.  This checks for liveness of the server.  It usually returns an empty response
 func (g *General) GetPing() (*pingResponse, error) { //test comment
 	// will be used elsewhere in application
 
