@@ -3,7 +3,7 @@ package market
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/brharrelldev/crytoTrader/lib"
+	"github.com/brharrelldev/cryptoTrader/lib"
 	"io/ioutil"
 	"net/http"
 	"net/url"

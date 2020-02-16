@@ -3,8 +3,8 @@ package general
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/brharrelldev/crytoTrader/ct_config"
-	"github.com/brharrelldev/crytoTrader/lib"
+	"github.com/brharrelldev/cryptoTrader/ct_config"
+	"github.com/brharrelldev/cryptoTrader/lib"
 	"net/http"
 )
 

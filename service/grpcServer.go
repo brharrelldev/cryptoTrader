@@ -2,8 +2,8 @@ package service
 
 import (
 	"fmt"
-	api_binance "github.com/brharrelldev/crytoTrader/api/binance"
-	"github.com/brharrelldev/crytoTrader/ct_config"
+	api_binance "github.com/brharrelldev/cryptoTrader/api/binance"
+	"github.com/brharrelldev/cryptoTrader/ct_config"
 	"google.golang.org/grpc"
 	"net"
 )

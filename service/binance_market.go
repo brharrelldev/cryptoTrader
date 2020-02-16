@@ -3,8 +3,8 @@ package service
 import (
 	"context"
 	"fmt"
-	api_binance "github.com/brharrelldev/crytoTrader/api/binance"
-	"github.com/brharrelldev/crytoTrader/exchanges/binance_api/market"
+	api_binance "github.com/brharrelldev/cryptoTrader/api/binance"
+	"github.com/brharrelldev/cryptoTrader/exchanges/binance_api/market"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/brharrelldev/crytoTrader/ct_config"
-	"github.com/brharrelldev/crytoTrader/service"
+	"github.com/brharrelldev/cryptoTrader/ct_config"
+	"github.com/brharrelldev/cryptoTrader/service"
 	"log"
 	"os"
 	"os/signal"

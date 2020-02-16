@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/brharrelldev/crytoTrader/client/cmd"
+	"github.com/brharrelldev/cryptoTrader/client/cmd"
 	"github.com/urfave/cli"
 	"log"
 	"os"

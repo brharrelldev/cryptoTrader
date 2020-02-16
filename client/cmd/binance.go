@@ -3,9 +3,9 @@ package cmd
 import (
 	"context"
 	"fmt"
-	api_binance "github.com/brharrelldev/crytoTrader/api/binance"
-	"github.com/brharrelldev/crytoTrader/ct_config"
-	"github.com/brharrelldev/crytoTrader/exchanges/binance_api/general"
+	api_binance "github.com/brharrelldev/cryptoTrader/api/binance"
+	"github.com/brharrelldev/cryptoTrader/ct_config"
+	"github.com/brharrelldev/cryptoTrader/exchanges/binance_api/general"
 	"github.com/urfave/cli"
 	"google.golang.org/grpc"
 )
