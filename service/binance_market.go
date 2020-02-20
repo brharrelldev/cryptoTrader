@@ -83,7 +83,6 @@ func (s *Server) GetBinanceMarketTradesRecent(ctx context.Context, req *api_bina
 		}
 
 		tiSlice = append(tiSlice, ti)
-
 	}
 
 	return &api_binance.GetBinanceMarketTradesRecentResponse{
