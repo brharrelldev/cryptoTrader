@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6018f23e-a5c8-4044-9db0-44f1dbe4b410" name="Default Changelist" comment="added coinbase protobuf defintions, and coinbase user rpc">
+      <change afterPath="$PROJECT_DIR$/.idea/cryptoTrader.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/brandonharrell.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coinbase/accounts.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coinbase/buys.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coinbase/payment_methods.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coinbase/sells.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coinbase/transactions.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coinbase/users.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coinbase/withdrawls.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/dev/ct-cli" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/local/ct-cli" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/local/ct-server" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exchanges/coinbase/Users/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exchanges/coinbase/timestamp.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/crypto_server.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/crypto_server.yml." afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/coinbase/users.proto" beforeDir="false" afterPath="$PROJECT_DIR$/api/coinbase/users.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/cmd/coinbase.go" beforeDir="false" afterPath="$PROJECT_DIR$/client/cmd/coinbase.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/client/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto-tool.yml" beforeDir="false" afterPath="$PROJECT_DIR$/crypto-tool.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ct_config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/ct_config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/shared.go" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/coinbase_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/coinbase_user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/grpcServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/grpcServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/types.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTTP Request" />
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/Cellar/go/1.13/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1XPMV6SQ1ifEvDCciqRqulvkqsv" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="go" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/exchanges/coinbase/Users" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/api/binance" />
+      <recent name="$PROJECT_DIR$/exchanges/binance_api" />
+      <recent name="$PROJECT_DIR$/exchanges" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Makefile.apply-manifest">
+    <configuration name="apply-manifest" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="apply-manifest" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="build-all" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="build-all" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="build-server" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="build-server" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="prep-manifest" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="prep-manifest" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="protos" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="protos" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Makefile.apply-manifest" />
+        <item itemvalue="Makefile.prep-manifest" />
+        <item itemvalue="Makefile.protos" />
+        <item itemvalue="Makefile.build-all" />
+        <item itemvalue="Makefile.build-server" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changing name of workflow" />
+    <MESSAGE value="Implemented a rough version of market depth client and server" />
+    <MESSAGE value="Added table output for market depth for binance exchange" />
+    <MESSAGE value="Added recent trades and table formating" />
+    <MESSAGE value="added coinbase protobuf defintions, and coinbase user rpc" />
+    <option name="LAST_COMMIT_MESSAGE" value="added coinbase protobuf defintions, and coinbase user rpc" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <proxy>direct</proxy>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="190" key="#Build_Tags_&amp;_Vendoring" timestamp="1582849831539">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="190" key="#Build_Tags_&amp;_Vendoring/0.0.1680.1050@0.0.1680.1050" timestamp="1582849831539" />
+    <state x="2424" y="382" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584325883360">
+      <screen x="1680" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2424" y="382" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.0.2560.1440/0.0.1680.1050@1680.0.2560.1440" timestamp="1584325883360" />
+    <state x="488" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583536292092">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="488" y="324" key="#com.intellij.fileTypes.FileTypeChooser/1680.0.1288.946/0.0.1680.1050@0.0.1680.1050" timestamp="1583536292092" />
+    <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser" timestamp="1581038012982">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1581038012982" />
+    <state x="1852" y="53" key="CommitChangelistDialog2" timestamp="1584325778790">
+      <screen x="1680" y="0" width="2560" height="1440" />
+    </state>
+    <state x="113" y="39" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1582162567649" />
+    <state x="1852" y="53" key="CommitChangelistDialog2/1680.0.2560.1440/0.0.1680.1050@1680.0.2560.1440" timestamp="1584325778790" />
+    <state width="1638" height="267" key="GridCell.Tab.0.bottom" timestamp="1582940792992">
+      <screen x="0" y="23" width="1680" height="954" />
+    </state>
+    <state width="1638" height="267" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1582938111570" />
+    <state width="1638" height="267" key="GridCell.Tab.0.bottom/0.23.1680.954@0.23.1680.954" timestamp="1582940792992" />
+    <state width="1638" height="267" key="GridCell.Tab.0.center" timestamp="1582940792991">
+      <screen x="0" y="23" width="1680" height="954" />
+    </state>
+    <state width="1638" height="267" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1582938111569" />
+    <state width="1638" height="267" key="GridCell.Tab.0.center/0.23.1680.954@0.23.1680.954" timestamp="1582940792991" />
+    <state width="1638" height="267" key="GridCell.Tab.0.left" timestamp="1582940792991">
+      <screen x="0" y="23" width="1680" height="954" />
+    </state>
+    <state width="1638" height="267" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1582938111568" />
+    <state width="1638" height="267" key="GridCell.Tab.0.left/0.23.1680.954@0.23.1680.954" timestamp="1582940792991" />
+    <state width="1638" height="267" key="GridCell.Tab.0.right" timestamp="1582940792992">
+      <screen x="0" y="23" width="1680" height="954" />
+    </state>
+    <state width="1638" height="267" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1582938111570" />
+    <state width="1638" height="267" key="GridCell.Tab.0.right/0.23.1680.954@0.23.1680.954" timestamp="1582940792992" />
+    <state x="371" y="164" key="SettingsEditor" timestamp="1582847698622">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="371" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1582847698622" />
+    <state x="440" y="261" key="Vcs.Push.Dialog.v2" timestamp="1582162618454">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="261" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1582162618454" />
+    <state x="392" y="234" width="895" height="582" key="find.popup" timestamp="1582935415379">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="392" y="234" width="895" height="582" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1582935415379" />
+    <state x="3738" y="320" width="1021" height="928" key="search.everywhere.popup" timestamp="1583672881163">
+      <screen x="2968" y="0" width="2560" height="1440" />
+    </state>
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1582157840503" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/1680.0.1288.946/0.0.1680.1050@0.0.1680.1050" timestamp="1583669811715" />
+    <state x="3738" y="320" width="1021" height="928" key="search.everywhere.popup/1680.0.1288.946/2968.0.2560.1440/0.0.1680.1050@2968.0.2560.1440" timestamp="1583672881163" />
+  </component>
+</project>
